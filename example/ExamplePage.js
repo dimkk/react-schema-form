@@ -20,13 +20,14 @@ import RaisedButton from 'material-ui/RaisedButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import lightRawTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 
+import DateTimePicker from '../material-ui-datetime-picker/lib/material'
 
 var ExamplePage = React.createClass({
 
     childContextTypes: {
         muiTheme: React.PropTypes.object
     },
-
+ 
     getChildContext() {
         return {
             muiTheme: this.state.muiTheme
@@ -44,6 +45,7 @@ var ExamplePage = React.createClass({
                 { label: "Kitchen Sink", value: 'data/kitchenSink.json'},
                 { label: "Login", value: 'data/login.json'},
                 { label: "Date", value: 'data/date.json'},
+                { label: "DateTime", value: 'data/datetime.json'},
                 { label: "Readonly", value: 'data/readonly.json'},
                 { label: "Array", value: 'data/array.json'},
                 { label: "Object", value: 'data/object.json'},
@@ -165,6 +167,7 @@ var ExamplePage = React.createClass({
                         <AceEditor mode="json" theme="github" height="300px" width="800px" onChange={this.onSchemaChange} name="aceSchema" value={this.state.schemaJson} editorProps={{$blockScrolling: true}}/>
                     </div>
                 </div>
+                <DateTimePicker />
             </div>
         );
     }

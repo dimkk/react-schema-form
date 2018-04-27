@@ -1,0 +1,24 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Types",
+        "properties": {
+            "name":  {
+                "type": "string",
+                "minLength": 3
+            },
+            "date": {
+                "title": "DateTime",
+                "type": "object"
+            }
+        },
+        "required": ["name", "datetime"]
+    },
+    "form": [
+        "name",
+        {
+            "key": "datetime",
+            "type": "date"
+        }
+    ]
+}

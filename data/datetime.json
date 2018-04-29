@@ -7,18 +7,18 @@
                 "type": "string",
                 "minLength": 3
             },
-            "date": {
-                "title": "Date",
+            "datetime": {
+                "title": "DateTime",
                 "type": "object"
             }
         },
-        "required": ["name", "date"]
+        "required": ["name", "datetime"]
     },
     "form": [
         "name",
         {
-            "key": "date",
-            "type": "date"
+            "key": "datetime",
+            "type": "datetime"
         }
     ]
 }

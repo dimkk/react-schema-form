@@ -26,7 +26,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "lodash": "^4.16.6",
-    "material-ui-datetime-picker": "file:material-ui-datetime-picker",
+    "material-ui-datetime-picker": "^1.5.0",
     "objectpath": "^1.2.1",
     "tv4": "^1.2.7"
   },

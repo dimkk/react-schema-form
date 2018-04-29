@@ -20,8 +20,6 @@ import RaisedButton from 'material-ui/RaisedButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import lightRawTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 
-import DateTimePicker from '../material-ui-datetime-picker/lib/material'
-
 var ExamplePage = React.createClass({
 
     childContextTypes: {
@@ -167,7 +165,6 @@ var ExamplePage = React.createClass({
                         <AceEditor mode="json" theme="github" height="300px" width="800px" onChange={this.onSchemaChange} name="aceSchema" value={this.state.schemaJson} editorProps={{$blockScrolling: true}}/>
                     </div>
                 </div>
-                <DateTimePicker />
             </div>
         );
     }

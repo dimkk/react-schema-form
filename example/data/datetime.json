@@ -7,7 +7,7 @@
                 "type": "string",
                 "minLength": 3
             },
-            "date": {
+            "datetime": {
                 "title": "DateTime",
                 "type": "object"
             }
@@ -18,7 +18,7 @@
         "name",
         {
             "key": "datetime",
-            "type": "date"
+            "type": "datetime"
         }
     ]
 }

@@ -5,7 +5,7 @@ import React from 'react';
 var utils = require('./utils');
 var classNames = require('classnames');
 import ComposedComponent from './ComposedComponent';
-import DateTimePicker from './material-ui-datetime-picker/lib/material';
+import DateTimePicker from 'material-ui-datetime-picker';
 import IconButton from 'material-ui/IconButton';
 import Clear from 'material-ui/svg-icons/content/clear';
 

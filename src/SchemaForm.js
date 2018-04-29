@@ -13,6 +13,7 @@ import Checkbox from './Checkbox';
 import Help from './Help';
 import Array from './Array';
 import FieldSet from './FieldSet';
+import DateTime from  './DateTime'
 import _ from 'lodash';
 
 class SchemaForm extends React.Component {
@@ -24,6 +25,7 @@ class SchemaForm extends React.Component {
         'textarea': TextArea,
         'select': Select,
         'radios': Radios,
+        'datetime': DateTime,
         'date': Date,
         'checkbox': Checkbox,
         'help': Help,

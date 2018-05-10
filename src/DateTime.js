@@ -5,7 +5,7 @@ import React from 'react';
 var utils = require('./utils');
 var classNames = require('classnames');
 import ComposedComponent from './ComposedComponent';
-import DateTimePicker from 'material-ui-datetime-picker';
+import DateTimePicker from './DateTimeControl';
 import IconButton from 'material-ui/IconButton';
 import Clear from 'material-ui/svg-icons/content/clear';
 
@@ -46,7 +46,7 @@ class DateTime extends React.Component {
                     style={this.props.form.style || {width: '90%', display: 'inline-block'}}/>
                 {this.props.value &&
                     <IconButton ref="button"
-                        onClick={() => this.props.onChangeValidate("")}
+                        onClick={() => this.props.onChangeValidate('')}
                         style={{position: 'relative', display: 'inline-block', top: '6px',right: '4px', padding: '0', width: '24px', height: '24px'}}>
                         <Clear />
                     </IconButton>

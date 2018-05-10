@@ -55,7 +55,7 @@ var ExamplePage = React.createClass({
             model: {},
             schemaJson: '',
             formJson: '',
-            selected: '',
+            selected: 'data/datetime.json',
             muiTheme: getMuiTheme(lightRawTheme)
         };
     },
@@ -118,7 +118,10 @@ var ExamplePage = React.createClass({
             this.setState({schemaJson: val, schema: s});
         } catch (e) {}
     },
-
+    // for datetime dev
+    componentDidMount(){
+        this.onSelectChange({value:'data/datetime.json'})
+    },
     render: function() {
         var mapper = {
             "rc-select": RcSelect
